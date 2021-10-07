@@ -1,0 +1,44 @@
+
+<section  class="min-vh-100">
+        <div class="container">
+          
+                    <h3>Ajouter un chauffeur.</h3>
+                   
+                        <form action="" >
+                            <div class="form-group">
+                                <label>id chauffeur</label>
+                                <input type="text" class="form-control" name="idChauffeur" [(ngModel)]="chauffeur.idChauffeur">
+                            </div>
+                            <div class="form-group">
+                                <label>Nom chauffeur</label>
+                                <input type="text" class="form-control" name="nomChauffeur" [(ngModel)]="chauffeur.nomChauffeur">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg" (click)="ajouterchauffeur()">Ajouter</button>
+                            <div class="alert alert-success" role="alert"> {{message}}</div>
+                        </form>
+                    </div>
+               
+          
+       
+   
+</section>
+
+
+<!--
+<div class="container"> 
+    <div class="col-sm-10 form-group-lg">
+        <form class="form-group">
+            
+                <label class="btn btn btn-success active">
+                    Id chauffeur <input type="text" > 
+                </label>
+                <br>
+                <label class="btn btn-success">
+                    Nom & Prénom <input type="text" ></label>
+        </form>
+        <button class="btn btn-outline-success" id="saveTestBtn" onclick="saveTest()" type="submit">
+            Ajouter Chauffeur
+        </button>
+    </div>
+</div>
+-->
